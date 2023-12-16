@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MUSIC ARTIST RECOMMENDATION SYSTEM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #fee140, #fa709a);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .wrapper {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-info {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #323232;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .input {
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            color: #323232;
+        }
+
+        .close-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #323232;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .close-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="search-info">
+            Type the name of an artist to find similar artists:
+        </div>
+        <div class="container">
+            <form class="search-container" action="http://127.0.0.1:5000/artist?title=" method="get">
+                <input type="text" class="input" name="title" placeholder="Enter artist name" />
+                <input type="submit" class="close-btn" value="Recommend"/>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
