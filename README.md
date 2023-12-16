@@ -3,7 +3,25 @@ A recommendation system for music artists based on TF-IDF vectorization.
 
 ## Overview
 This is a simple Flask web application that provides music recommendations based on artist names. It uses a recommendation algorithm implemented in the recommend.py module to suggest similar artists.
-
+## File structure
+```bash
+├── Data cleaning and testing file.ipynb
+├── README.md
+├── app.py
+├── recommend.py
+├── requirements.txt
+└── templates
+    ├── index.html
+    └── tempx.html
+```
+* `Data cleaning and testing file.ipynb:` Jupyter Notebook file for data cleaning and testing.
+* `README.md:` Project documentation file.
+* `app.py:` Main Flask application file.
+* `recommend.py:` Module containing the recommendation algorithm.
+* `requirements.txt:` File specifying the project dependencies.
+* `templates:` Folder containing HTML templates for the web application.
+* `index.html:` HTML file for user input.
+* `tempx.html:` HTML file for displaying the recommendation output.
 ## Installation
 1. Clone repository:
    ```bash
